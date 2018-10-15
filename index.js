@@ -21,7 +21,7 @@ let BITCOIN = {
     private: 0x0488ade4
   }
 };
-let TESTNET: {
+let TESTNET = {
   wif: 0xef,
   bip32: {
     public: 0x043587cf,
@@ -350,6 +350,8 @@ function fromSeed(seed, network) {
 }
 
 module.exports = {
+  BITCOIN,
+  TESTNET,
   fromBase58,
   fromPrivateKey,
   fromPublicKey,
