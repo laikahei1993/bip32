@@ -21,6 +21,13 @@ let BITCOIN = {
     private: 0x0488ade4
   }
 };
+let TESTNET: {
+  wif: 0xef,
+  bip32: {
+    public: 0x043587cf,
+    private: 0x04358394
+  }
+};
 
 function BIP32(d, Q, chainCode, network) {
   typeforce(NETWORK_TYPE, network);
